@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+  <title>Sign Up</title>
+  <script src="function.js"></script>
+  <link href="main.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <header id="signhead">
+    <h1 id="signin">Welcome to Rent-A-Car</h1>
+    <ul>
+      <li id="signli"><a href="index.html">Home</a>
+      <a href="login.html">Log In</a></li>
+    </ul>
+  </header>
+  <form id="signup" method="post" onsubmit="return validate_form(this);">
+    <p>Your First Name</p>
+    <input name="firstname" type="text" style="width:200px;height:25px"/>
+    <p>Your Last Name</p>
+    <input name="lastname" type="text" style="width:200px;height:25px"/>
+    <p>Your E-mail Address</p>
+    <input name="email" type="text" style="width:200px;height:25px" onchange="validate_email()"/>
+    <p>Your Password</p>
+    <input id="pw1" name="password" type="password" style="width:200px;height:25px"/>
+    <p>Please Re-enter Your Password</p>
+    <input id="pw2" name="repassword" type="password" style="width:200px;height:25px" onblur="check()"/>
+    <p>Your Age</p>
+    <select>
+      <option value="18">18</option>
+      <option value="19">19</option>
+      <option value="20">20</option>
+      <option value="21">21</option>
+      <option value="22">22</option>
+      <option value="23">23</option>
+      <option value="24">24</option>
+      <option value="25">25+</option>
+    </select>
+    <p>Your Driver's License Number</p>
+    <input name="dln" type="text" style="width:200px;height:25px">
+    <p><input name="" type="submit" value="Sign Up Now!"><input name="" type="reset" value="Reset"></p>
+</form>
+</body>
+</html>

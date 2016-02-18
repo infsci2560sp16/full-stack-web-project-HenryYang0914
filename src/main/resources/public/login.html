@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+  <link href="main.css" rel="stylesheet" type="text/css" />
+  <script src="function.js"></script>
+  <title>Log In</title>
+</head>
+<body>
+  <header>
+    <h1>Log in</h1>
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="signup.html">Sign Up</a></li>
+</ul>
+</nav>
+  </header>
+  <form id="login" name="login" method="post" onsubmit="return validate_form(this);">
+    <p>Your E-mail Address</p>
+    <p><input type="text" name="email" style="width:200px;height:25px" onchange="validate_email()"></p>
+    <p>Your Password</p>
+    <p><input type="text" name="password" style="width:200px;height:25px"></p>
+    <p><input name="" type="submit" value="Log in"></p>
+  </form>
+</html>
