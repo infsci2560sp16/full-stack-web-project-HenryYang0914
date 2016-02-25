@@ -1,32 +1,24 @@
 function validate_email(field, alerttxt)
 {
-with (field)
-{
-apos=value.indexOf("@")
-dotpos=value.lastIndexOf(".")
+apos=value.indexOf("@");
+dotpos=value.lastIndexOf(".");
 if (apos<1||dotpos-apos<2)
-  {alert(alerttxt);return false}
-else {return true}
-}
+  {alert(alerttxt);return false};
+else {return true};
 }
 
 function validate_form(thisform)
 {
-with (thisform)
-{
-if (validate_email(email,"Please enter a valid e-mail address!")==false)
-  {email.focus();return false}
-}
+if (validate_email(email,"Please enter a valid e-mail address!")===false)
+  {email.focus();return false};
 }
 
 function check(){
-  with(document.all){
     if(pw1.value != pw2.value){
       alert("Please enter the same password!")
       pw1.value="";
       pw2.value="";
     }
-  }
 }
 
 var images = ["img1.jpg","img2.jpg","img3.jpg","img4.jpg","img5.jpg"];
