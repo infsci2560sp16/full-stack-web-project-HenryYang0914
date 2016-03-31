@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Get XML/JSON</h1>
+<script>
+ function getXML(){
+	 document.getElementById("content").innerHTML = 
+		 "Link to XML page" + "<a href='http://localhost:8080/CarRentWeb/web/cars/XML'>XML</a>";
+	 document.getElementById("source").src="http://localhost:8080/CarRentWeb/web/cars/XML";
+ }
+ function getJSON(){
+	 document.getElementById("content").innerHTML = 
+		 "Link to JSON page" + "<a href='http://localhost:8080/CarRentWeb/web/cars/JSON'>JSON</a>";
+	 document.getElementById("source").src="http://localhost:8080/CarRentWeb/web/cars/JSON";
+ }
+</script>
+<div>
+<button onclick = "getXML()">XML</button>
+<button onclick = "getJSON()">JSON</button>
+<p id="content">
+
+</p>
+<iframe id="source" width="1000" height="1000"></iframe>
+</div>
+</body>
+</html>
